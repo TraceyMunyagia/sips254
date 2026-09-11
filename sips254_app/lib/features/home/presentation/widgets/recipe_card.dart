@@ -70,7 +70,7 @@ class RecipeCard extends ConsumerWidget {
                         data: (count) => Text('$count',
                             style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
                         loading: () => const SizedBox.shrink(),
-                        error: (_, __) => const SizedBox.shrink(),
+                        error: (_, _) => const SizedBox.shrink(),
                       ),
                       const SizedBox(width: 16),
                       IconButton(

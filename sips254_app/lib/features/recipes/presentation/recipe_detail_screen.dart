@@ -128,7 +128,7 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
                             style: TextStyle(color: AppColors.premiumAccent, fontWeight: FontWeight.bold)),
                         equipmentAsync.when(
                           loading: () => const SizedBox.shrink(),
-                          error: (_, __) => const SizedBox.shrink(),
+                          error: (_, _) => const SizedBox.shrink(),
                           data: (list) => Column(
                             children: list
                                 .map((e) => Padding(

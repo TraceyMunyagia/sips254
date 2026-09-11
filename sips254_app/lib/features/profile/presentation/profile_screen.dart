@@ -72,13 +72,13 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> with SingleTicker
                   followersAsync.when(
                     data: (count) => _StatColumn(label: 'Followers', count: count),
                     loading: () => const SizedBox.shrink(),
-                    error: (_, __) => const SizedBox.shrink(),
+                    error: (_, _) => const SizedBox.shrink(),
                   ),
                   const SizedBox(width: 32),
                   followingAsync.when(
                     data: (count) => _StatColumn(label: 'Following', count: count),
                     loading: () => const SizedBox.shrink(),
-                    error: (_, __) => const SizedBox.shrink(),
+                    error: (_, _) => const SizedBox.shrink(),
                   ),
                 ],
               ),
