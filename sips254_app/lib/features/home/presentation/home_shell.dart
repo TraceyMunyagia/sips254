@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_feed_screen.dart';
 
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key});
@@ -11,7 +12,7 @@ class _HomeShellState extends State<HomeShell> {
   int _index = 0;
 
   final _screens = const [
-    Center(child: Text('Home')),
+    HomeFeedScreen(),
     Center(child: Text('Discover')),
     Center(child: Text('AI Bartender')),
     Center(child: Text('Create')),
