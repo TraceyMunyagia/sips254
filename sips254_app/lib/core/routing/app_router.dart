@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sips254/features/profile/presentation/profile_screen.dart';
 import 'package:sips254/features/recipes/presentation/create_recipe_screen.dart';
 import 'package:sips254/features/recipes/presentation/recipe_detail_screen.dart';
 import '../../features/auth/presentation/sign_in_screen.dart';
@@ -30,6 +31,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 GoRoute(
   path: '/create-recipe',
   builder: (context, state) => const CreateRecipeScreen(),
+),
+GoRoute(
+  path: '/profile/:userId',
+  builder: (context, state) => ProfileScreen(userId: state.pathParameters['userId']!),
 ),
     ],
   );

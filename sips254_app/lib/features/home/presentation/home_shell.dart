@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_feed_screen.dart';
+import '../../profile/presentation/profile_screen.dart';
+import '../../discover/presentation/discover_screen.dart';
 
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key});
@@ -13,10 +15,10 @@ class _HomeShellState extends State<HomeShell> {
 
   final _screens = const [
     HomeFeedScreen(),
-    Center(child: Text('Discover')),
+    DiscoverScreen(),
     Center(child: Text('AI Bartender')),
     Center(child: Text('Create')),
-    Center(child: Text('Profile')),
+    ProfileScreen(),
   ];
 
   @override
