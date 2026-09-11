@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Passion Dawa",
+    "description": "A Kenyan twist on the classic Dawa, built with passion fruit.",
+    "category": "Kenyan",
+    "glassware": "Rocks Glass",
+    "preparation_method": "Built",
+    "primary_spirit": "Kenya Cane",
+    "strength": 6, "sweetness": 7, "sourness": 4, "bitterness": 1,
+    "fruitiness": 8, "fizz": 0, "difficulty": 2,
+    "servings": 1,
+    "garnish": "Lime wheel",
+    "instructions": "Muddle lime and honey in a rocks glass. Add crushed ice, Kenya Cane, and passion fruit juice. Stir well.",
+    "is_kenyan_inspired": true,
+    "ingredients": [
+      { "spirit": "Kenya Cane", "amount": 50, "unit": "ml" },
+      { "ingredient": "Passion Fruit Juice", "amount": 30, "unit": "ml" },
+      { "ingredient": "Lime Juice", "amount": 15, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Classic Daiquiri",
+    "description": "The original three-ingredient rum classic.",
+    "category": "Classic",
+    "glassware": "Coupe",
+    "preparation_method": "Shaken",
+    "primary_spirit": "White Rum",
+    "strength": 6, "sweetness": 5, "sourness": 6, "bitterness": 0,
+    "fruitiness": 3, "fizz": 0, "difficulty": 2,
+    "servings": 1,
+    "garnish": "Lime wheel",
+    "instructions": "Shake all ingredients hard with ice. Strain into a chilled coupe.",
+    "is_kenyan_inspired": false,
+    "ingredients": [
+      { "spirit": "White Rum", "amount": 50, "unit": "ml" },
+      { "ingredient": "Lime Juice", "amount": 25, "unit": "ml" },
+      { "ingredient": "Simple Syrup", "amount": 15, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Mango Ginger Cooler",
+    "description": "Tropical and refreshing, built for Nairobi afternoons.",
+    "category": "Tropical",
+    "glassware": "Highball",
+    "preparation_method": "Built",
+    "primary_spirit": "Vodka",
+    "strength": 5, "sweetness": 6, "sourness": 3, "bitterness": 0,
+    "fruitiness": 8, "fizz": 6, "difficulty": 2,
+    "servings": 1,
+    "garnish": "Mint leaves",
+    "instructions": "Fill a highball with ice. Add vodka, mango puree, and ginger syrup. Top with soda water and stir gently.",
+    "is_kenyan_inspired": true,
+    "ingredients": [
+      { "spirit": "Vodka", "amount": 45, "unit": "ml" },
+      { "ingredient": "Mango Puree", "amount": 40, "unit": "ml" },
+      { "ingredient": "Ginger Syrup", "amount": 15, "unit": "ml" },
+      { "ingredient": "Soda Water", "amount": 60, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Gin & Tonic",
+    "description": "The simplest classic — spirit, tonic, ice.",
+    "category": "Classic",
+    "glassware": "Highball",
+    "preparation_method": "Built",
+    "primary_spirit": "Gin",
+    "strength": 5, "sweetness": 2, "sourness": 2, "bitterness": 4,
+    "fruitiness": 1, "fizz": 8, "difficulty": 1,
+    "servings": 1,
+    "garnish": "Lime wheel",
+    "instructions": "Fill a highball with ice. Add gin, top with tonic water, stir once, garnish with lime.",
+    "is_kenyan_inspired": false,
+    "ingredients": [
+      { "spirit": "Gin", "amount": 50, "unit": "ml" },
+      { "ingredient": "Tonic Water", "amount": 120, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Baobab Sour",
+    "description": "A tart, distinctly Kenyan take on the whisky sour format.",
+    "category": "Kenyan",
+    "glassware": "Rocks Glass",
+    "preparation_method": "Shaken",
+    "primary_spirit": "Whisky",
+    "strength": 6, "sweetness": 4, "sourness": 7, "bitterness": 2,
+    "fruitiness": 5, "fizz": 0, "difficulty": 3,
+    "servings": 1,
+    "garnish": "Lemon twist",
+    "instructions": "Shake whisky, baobab puree, lemon juice, and simple syrup hard with ice. Strain over fresh ice.",
+    "is_kenyan_inspired": true,
+    "ingredients": [
+      { "spirit": "Whisky", "amount": 50, "unit": "ml" },
+      { "ingredient": "Baobab Puree", "amount": 25, "unit": "ml" },
+      { "ingredient": "Lemon Juice", "amount": 20, "unit": "ml" },
+      { "ingredient": "Simple Syrup", "amount": 10, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Hibiscus Margarita",
+    "description": "A floral, magenta-hued spin on the tequila classic.",
+    "category": "Tropical",
+    "glassware": "Coupe",
+    "preparation_method": "Shaken",
+    "primary_spirit": "Tequila",
+    "strength": 6, "sweetness": 5, "sourness": 6, "bitterness": 1,
+    "fruitiness": 4, "fizz": 0, "difficulty": 3,
+    "servings": 1,
+    "garnish": "Salt rim",
+    "instructions": "Shake tequila, hibiscus syrup, and lime juice hard with ice. Strain into a salt-rimmed coupe.",
+    "is_kenyan_inspired": false,
+    "ingredients": [
+      { "spirit": "Tequila", "amount": 50, "unit": "ml" },
+      { "ingredient": "Hibiscus Syrup", "amount": 20, "unit": "ml" },
+      { "ingredient": "Lime Juice", "amount": 20, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Coconut Rum Punch",
+    "description": "A crowd-pleasing batch punch for parties.",
+    "category": "Punch",
+    "glassware": "Punch Bowl",
+    "preparation_method": "Built",
+    "primary_spirit": "Dark Rum",
+    "strength": 5, "sweetness": 7, "sourness": 3, "bitterness": 0,
+    "fruitiness": 7, "fizz": 3, "difficulty": 2,
+    "servings": 10,
+    "garnish": "Pineapple wedges",
+    "instructions": "Combine rum, coconut cream, pineapple juice, and lime juice in a punch bowl with ice. Stir and serve.",
+    "is_kenyan_inspired": false,
+    "ingredients": [
+      { "spirit": "Dark Rum", "amount": 500, "unit": "ml" },
+      { "ingredient": "Coconut Cream", "amount": 300, "unit": "ml" },
+      { "ingredient": "Pineapple Juice", "amount": 500, "unit": "ml" },
+      { "ingredient": "Lime Juice", "amount": 100, "unit": "ml" }
+    ]
+  },
+  {
+    "name": "Virgin Passion Cooler",
+    "description": "A non-alcoholic tropical mocktail.",
+    "category": "Mocktail",
+    "glassware": "Highball",
+    "preparation_method": "Built",
+    "primary_spirit": null,
+    "strength": 0, "sweetness": 6, "sourness": 4, "bitterness": 0,
+    "fruitiness": 8, "fizz": 6, "difficulty": 1,
+    "servings": 1,
+    "garnish": "Mint leaves",
+    "instructions": "Fill a highball with ice. Add passion fruit juice and lime juice, top with soda water.",
+    "is_kenyan_inspired": true,
+    "ingredients": [
+      { "ingredient": "Passion Fruit Juice", "amount": 60, "unit": "ml" },
+      { "ingredient": "Lime Juice", "amount": 15, "unit": "ml" },
+      { "ingredient": "Soda Water", "amount": 90, "unit": "ml" }
+    ]
+  }
+]
