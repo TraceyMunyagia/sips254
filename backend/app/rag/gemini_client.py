@@ -73,3 +73,64 @@ Respond with ONLY a JSON array in this exact shape, no other text:
         text = text.strip()
 
     return json.loads(text)
+
+def explain_punch_recommendation(candidates: list[dict], people: int, strength: str | None, sweetness: str | None) -> list[dict]:
+    """Same pattern as rank_and_explain, but tailored to punch/party framing —
+    explanations mention batch-friendliness and crowd-pleasing qualities."""
+
+    if not candidates:
+        return []
+
+    candidate_summary = [
+        {
+            "name": c["name"],
+            "id": c["id"],
+            "match_score": c["match"]["score"],
+            "have": c["match"]["have"],
+            "missing": c["match"]["missing"],
+            "base_servings": c["servings"],
+            "strength": c["strength"],
+            "sweetness": c["sweetness"],
+        }
+        for c in candidates
+    ]
+
+    prompt = f"""
+Candidate cocktails suited for batching (JSON): {json.dumps(candidate_summary)}
+
+Party size: {people} people
+Desired strength: {strength or "no preference"}
+Desired sweetness: {sweetness or "no preference"}
+
+Task: Rank these candidates for a party punch, considering how crowd-pleasing and
+easy-to-batch each is, alongside the match_score and stated preferences. Write a
+short (1-2 sentence) explanation per cocktail focused on why it works for a group
+of {people}.
+
+Respond with ONLY a JSON array in this exact shape, no other text:
+[
+  {{
+    "cocktail_id": "<id>",
+    "name": "<name>",
+    "match_score": <float 0-1>,
+    "have_ingredients": [<strings>],
+    "missing_ingredients": [<strings>],
+    "explanation": "<string>"
+  }}
+]
+"""
+
+    interaction = client.interactions.create(
+        model=MODEL_NAME,
+        input=prompt,
+        system_instruction=SYSTEM_INSTRUCTION,
+    )
+
+    text = interaction.output_text.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.startswith("json"):
+            text = text[4:]
+        text = text.strip()
+
+    return json.loads(text)

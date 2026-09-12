@@ -4,6 +4,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.ingredients import router as ingredients_router
+from app.api.punch import router as punch_router
 
 app = FastAPI(title="Sips254 AI Service")
 
@@ -15,6 +16,7 @@ app.add_middleware(
 )
 
 app.include_router(ingredients_router)
+app.include_router(punch_router)
 
 
 @app.get("/health")

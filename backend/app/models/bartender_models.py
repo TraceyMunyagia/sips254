@@ -41,3 +41,32 @@ class SuggestedCocktail(BaseModel):
 class BartenderResponse(BaseModel):
     suggestions: list[SuggestedCocktail]
     shopping_suggestions: list[str] = []
+
+
+class ScaledIngredient(BaseModel):
+    name: str
+    original_amount: float
+    scaled_amount: float
+    unit: str
+
+
+class ScaledRecipe(BaseModel):
+    cocktail_name: str
+    target_people: int
+    base_servings: int
+    multiplier: float
+    scaled_ingredients: list[ScaledIngredient]
+    instructions: str
+    garnish: Optional[str] = None
+
+
+class PunchRecommendation(BaseModel):
+    cocktail_id: str
+    name: str
+    match_score: float
+    explanation: str
+    scaled_recipe: ScaledRecipe
+
+
+class PunchResponse(BaseModel):
+    recommendations: list[PunchRecommendation]
